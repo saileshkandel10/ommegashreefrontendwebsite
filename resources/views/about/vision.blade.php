@@ -21,7 +21,7 @@ $aboutRoutes=['/chairpersons-message','/our-vision-and-mission','/board-of-direc
     </div>
   </div>
   <div style="flex:1 1 640px;min-width:0;display:flex;flex-direction:column;gap:28px">
-    <img src="/images/professional/laboratory.jpg" alt="Team and factory" style="width:100%;height:100%;object-fit:cover;border-radius:28px">
+    <img src="/images/professional/unnamed.webp" alt="Team and factory" style="width:100%;height:420px;object-fit:cover;border-radius:28px">
     <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px">
       <div style="background:#B72E5B;color:#fff;border-radius:28px;padding:44px">
         <div style="width:52px;height:52px;border-radius:14px;background:#fff;color:#B72E5B;display:flex;align-items:center;justify-content:center;margin-bottom:24px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"></path><circle cx="12" cy="12" r="3"></circle></svg></div>

@@ -12,7 +12,7 @@
 
   <!-- hero banner -->
   <div style="padding:0 80px 56px">
-    <img src="/images/professional/laboratory.jpg" alt="Om Megashree Pharmaceuticals facility" style="width:100%;height:420px;object-fit:cover;border-radius:28px">
+    <img src="/images/professional/unnamed.webp" alt="Om Megashree Pharmaceuticals facility" style="width:100%;height:420px;object-fit:cover;border-radius:28px">
   </div>
 
   <!-- company overview -->
