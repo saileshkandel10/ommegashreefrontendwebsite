@@ -39,9 +39,9 @@
 <!-- about -->
 <div style="display:flex;flex-wrap:wrap;gap:64px;padding:72px 80px;align-items:center;background:#fff">
 <div style="flex:1 1 480px;min-width:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px">
-<div style="height:300px;border-radius:20px;background:#F3D3DC;grid-row:span 2;display:flex;align-items:flex-end;padding:16px;box-sizing:border-box;font-size:12px;color:#2E2627">[PHOTO: Laboratory]</div>
-<div style="height:142px;border-radius:20px;background:#F9EBEF;display:flex;align-items:flex-end;padding:16px;box-sizing:border-box;font-size:12px;color:#2E2627">[PHOTO: Production]</div>
-<div style="height:142px;border-radius:20px;background:#F9EBEF;display:flex;align-items:flex-end;padding:16px;box-sizing:border-box;font-size:12px;color:#2E2627">[PHOTO: Packaging]</div>
+<div style="height:300px;border-radius:20px;background:url('/images/professional/unnamed.webp') center center/cover no-repeat;grid-row:span 2;display:flex;align-items:flex-end;padding:16px;box-sizing:border-box;font-size:12px;color:#2E2627">Laboratory</div>
+<div style="height:142px;border-radius:20px;background:url('/images/professional/unnamed.webp') center center/cover no-repeat;display:flex;align-items:flex-end;padding:16px;box-sizing:border-box;font-size:12px;color:#2E2627">Production</div>
+<div style="height:142px;border-radius:20px;background:url('/images/professional/unnamed.webp') center center/cover no-repeat;display:flex;align-items:flex-end;padding:16px;box-sizing:border-box;font-size:12px;color:#2E2627">Packaging</div>
 </div>
 <div style="flex:1 1 480px;min-width:0">
 <div style="color:#BE3057;font-weight:600;font-size:14px;letter-spacing:1.5px">ABOUT US</div>
@@ -106,11 +106,11 @@
 <div style="padding:0 80px 88px">
 <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px;margin-bottom:28px"><div><div style="color:#BE3057;font-weight:600;font-size:14px;letter-spacing:1.5px">GALLERY</div><h2 style="font-family:Sora;font-size:40px;margin:10px 0 0;color:#2E2627">Inside Om Megashree</h2></div><a href="/disclosure/gallery" style="color:#BE3057;font-weight:600">View full gallery →</a></div>
 <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(2,230px);gap:16px">
-<div style="grid-column:span 2;grid-row:span 2;border-radius:24px;background:#2B6684;display:flex;align-items:flex-end;padding:20px;color:#E6F0F5;font-size:12px">[PHOTO: Factory exterior]</div>
-<div style="border-radius:24px;background:#F3D3DC;display:flex;align-items:flex-end;padding:16px;font-size:12px;color:#2E2627">[PHOTO: Production line]</div>
-<div style="border-radius:24px;background:#E6F0F5;display:flex;align-items:flex-end;padding:16px;font-size:12px;color:#2E2627">[PHOTO: Laboratory]</div>
-<div style="border-radius:24px;background:#E6F0F5;display:flex;align-items:flex-end;padding:16px;font-size:12px;color:#2E2627">[PHOTO: Packaging]</div>
-<div style="border-radius:24px;background:#F3D3DC;display:flex;align-items:flex-end;padding:16px;font-size:12px;color:#2E2627">[PHOTO: Inauguration]</div>
+<div style="grid-column:span 2;grid-row:span 2;border-radius:24px;background:url('/images/professional/unnamed.webp') center center/cover no-repeat;display:flex;align-items:flex-end;padding:20px;color:#E6F0F5;font-size:12px">Factory exterior</div>
+<div style="border-radius:24px;background:url('/images/professional/unnamed.webp') center center/cover no-repeat;display:flex;align-items:flex-end;padding:16px;font-size:12px;color:#2E2627">Production line</div>
+<div style="border-radius:24px;background:url('/images/professional/unnamed.webp') center center/cover no-repeat;display:flex;align-items:flex-end;padding:16px;font-size:12px;color:#2E2627">Laboratory</div>
+<div style="border-radius:24px;background:url('/images/professional/unnamed.webp') center center/cover no-repeat;display:flex;align-items:flex-end;padding:16px;font-size:12px;color:#2E2627">Packaging</div>
+<div style="border-radius:24px;background:url('/images/professional/unnamed.webp') center center/cover no-repeat;display:flex;align-items:flex-end;padding:16px;font-size:12px;color:#2E2627">Inauguration</div>
 </div>
 </div>
 
