@@ -5,7 +5,7 @@
 
 <!-- hero slider -->
 <div style="position:relative;width:100%;height:720px;overflow:hidden;color:#fff">
-<div style="position:absolute;inset:0;background:url('/images/professional/hero-pharma.jpg') center center/cover no-repeat"></div>
+<div style="position:absolute;inset:0;background:url('/images/professional/unnamed.webp') center center/cover no-repeat"></div>
 <div style="position:absolute;inset:0;background:rgba(46,38,39,.28)"></div>
 <div style="position:absolute;top:28px;right:80px;background:#fff;border-radius:999px;padding:8px 18px;font-family:Sora;font-weight:600;font-size:14px;color:#2E2627"><span style="color:#BE3057">01</span> / 05</div>
 <div style="position:relative;height:100%;padding:0 140px 120px;display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;max-width:960px">
