@@ -22,6 +22,7 @@
   .form-label{font-size:13px;font-weight:600;display:block;margin-bottom:6px;color:#5A4E50}
   img{max-width:100%;height:auto;display:block}
   .container{width:100%;max-width:1440px;margin:0 auto;padding:0 20px;box-sizing:border-box}
+  header .menu-toggle{display:none}
   @media (max-width:768px){
     body{font-size:14px}
     .topbar,.header-main{padding:0 20px!important}
@@ -69,9 +70,9 @@
   <div style="display:flex;gap:28px;flex-wrap:wrap;color:#fff"><a href="tel:+977015244310" style="color:#fff">01-5244310</a><a href="mailto:info@ommegashreepharmaceuticals.com" style="color:#fff">info@ommegashreepharmaceuticals.com</a></div>
   <div style="display:flex;gap:24px;align-items:center;color:#fff"><a href="https://nepal.pharmasoftwares.com/" style="color:#fff">SFA Login</a><a href="#" style="color:#fff">EN / नेपाली</a></div>
 </div>
-<header style="background:#fff;padding:0 20px;height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;border-bottom:1px solid #EBDDE1;position:sticky;top:0;z-index:40">
+<header style="background:#fff;padding:0 20px;height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;border-bottom:1px solid #EBDDE1;position:sticky;top:0;z-index:40;position:relative">
   <a href="/" style="display:flex;align-items:center"><img src="/images/logo.png" alt="Om Megashree Pharmaceuticals" style="height:50px;width:auto;display:block"></a>
-  <button class="menu-toggle" style="display:none;background:none;border:none;color:#2E2627;font-size:24px;cursor:pointer">☰</button>
+  <button class="menu-toggle" style="background:none;border:none;color:#2E2627;font-size:24px;cursor:pointer">☰</button>
   <nav style="display:flex;gap:28px;font-size:15px;font-weight:500;flex-wrap:wrap;color:#2E2627">
   <a href="/" style="color:#2E2627">Home</a>
   <div class="dropdown" style="position:relative">
@@ -127,6 +128,7 @@
 </div>
 <script>
   var toggle=document.querySelector('.menu-toggle');var closeBtn=document.querySelector('.close-menu');var nav=document.querySelector('header nav');if(toggle){toggle.onclick=function(){nav.classList.toggle('open');toggle.style.display=nav.classList.contains('open')?'none':'flex';closeBtn.style.display=nav.classList.contains('open')?'block':'none';}}if(closeBtn){closeBtn.onclick=function(){nav.classList.remove('open');toggle.style.display='flex';closeBtn.style.display='none';}}
+  var dropdowns=document.querySelectorAll('.dropdown > a');dropdowns.forEach(function(d){d.onclick=function(e){if(window.innerWidth<=768){e.preventDefault();var menu=d.nextElementSibling;if(menu&&menu.classList.contains('dropdown-menu')){menu.classList.toggle('show');}}}});
 </script>
 </body>
 </html>
