@@ -26,19 +26,17 @@
   .desktop-nav{display:flex}
   @media (max-width:768px){
     body{font-size:14px}
-    header{padding:0 20px;height:auto}
+    header{padding:0 20px!important;height:auto!important}
     header .menu-toggle{display:flex!important}
-    header .desktop-nav{display:none!important;position:absolute;top:80px;left:0;right:0;background:#fff;flex-direction:column;padding:20px;border-bottom:1px solid #EBDDE1;gap:0;z-index:60;width:100%}
+    header .desktop-nav{display:none!important;position:absolute!important;top:80px;left:0;right:0;background:#fff;flex-direction:column;padding:20px;border-bottom:1px solid #EBDDE1;gap:0;z-index:60;width:100%}
     header .desktop-nav.open{display:flex!important}
     header .desktop-nav a,header .desktop-nav .dropdown>a{padding:12px 0;border-bottom:1px solid #F3F3F5;font-size:16px;display:block;width:100%}
     .desktop-contact{display:none!important}
-    .desktop-nav .dropdown-menu{position:static;box-shadow:none;border:none;padding:0;width:100%;min-width:auto;background:#FBF8F9}
-    .desktop-nav .dropdown-menu a{padding:10px 20px;font-size:14px;color:#5A4E50}
+    .desktop-nav .dropdown-menu{position:static!important;box-shadow:none!important;border:none!important;padding:0!important;width:100%!important;min-width:auto!important;background:#FBF8F9}
+    .desktop-nav .dropdown-menu a{padding:10px 20px!important;font-size:14px!important;color:#5A4E50}
     .desktop-nav .dropdown-menu.show{display:block}
-    header .menu-toggle{display:flex}
-    header .contact-btn{padding:10px 20px;font-size:13px}
-    h1{font-size:36px!important;line-height:1.2!important}
-    h2{font-size:28px!important;line-height:1.3!important}
+    h1{font-size:34px!important;line-height:1.2!important}
+    h2{font-size:26px!important;line-height:1.3!important}
     .page-header,.section-header{padding:40px 20px!important}
     .container{padding:0 20px}
     .grid-4,.products-grid,.expertise-grid,.values-grid{grid-template-columns:1fr!important}
@@ -51,19 +49,29 @@
     .two-col,.three-col{flex-direction:column!important}
     .card-stack{margin-bottom:24px}
     .brand-text{font-size:16px!important}
-    [style*="padding:56px 80px"],[style*="padding:56px 80px 48px"],[style*="padding:0 80px"],[style*="padding:72px 80px"],[style*="padding:88px 80px"],[style*="margin:0 80px"]{padding-left:20px!important;padding-right:20px!important;margin-left:0!important;margin-right:0!important}
-    [style*="padding:56px 80px 72px"]{padding-left:20px!important;padding-right:20px!important}
-    [style*="margin:56px 80px"],[style*="margin:0 80px 72px"],[style*="margin:0 80px 88px"]{margin-left:0!important;margin-right:0!important}
-    [style*="height:420px"],[style*="height:440px"],[style*="height:260px"],[style*="height:280px"],[style*="height:340px"]{height:auto!important;max-height:250px!important}
-    [style*="grid-template-columns:repeat(3,"],[style*="grid-template-columns:repeat(4,"]{grid-template-columns:1fr!important}
-    [style*="flex-direction:row"]{flex-direction:column!important}
+    /* Override all inline paddings/margins */
+    [style*="padding:56px 80px"],[style*="padding:56px 80px 48px"],[style*="padding:0 80px"],[style*="padding:72px 80px"],[style*="padding:88px 80px"],[style*="padding:44px"],[style*="padding:36px"],[style*="padding:56px 80px 56px"],[style*="padding:40px 80px"],[style*="padding:0 80px 40px"],[style*="padding:0 80px 72px"],[style*="padding:0 80px 88px"]{padding-left:20px!important;padding-right:20px!important}
+    [style*="margin:0 80px"],[style*="margin:56px 80px"],[style*="margin:0 80px 72px"],[style*="margin:0 80px 88px"],[style*="margin:56px 80px 24px"],[style*="margin:72px 80px 24px"]{margin-left:0!important;margin-right:0!important}
+    /* Grid overrides */
+    [style*="grid-template-columns:repeat(3,"],[style*="grid-template-columns:repeat(4,"],[style*="grid-template-columns:repeat(2,"]{grid-template-columns:1fr!important}
+    /* Flex direction overrides */
+    [style*="flex-direction:row"],[style*="flex-wrap:wrap"][style*="gap:48px"],[style*="gap:64px"]{flex-direction:column!important}
+    /* Image height overrides */
+    [style*="height:420px"],[style*="height:440px"],[style*="height:260px"],[style*="height:280px"],[style*="height:340px"],[style*="height:220px"],[style*="height:200px"]{height:auto!important;max-height:250px!important}
+    /* Sticky sidebar override */
+    [style*="position:sticky;top:24px"]{position:static!important}
   }
   @media (max-width:480px){
-    h1{font-size:30px!important}
-    h2{font-size:24px!important}
+    h1{font-size:28px!important}
+    h2{font-size:22px!important}
     header{height:auto;padding:12px 20px}
     .menu-toggle{margin-left:auto}
-    [style*="padding:56px 80px"],[style*="padding:0 80px"],[style*="padding:72px 80px"],[style*="padding:88px 80px"],[style*="margin:0 80px"]{padding-left:16px!important;padding-right:16px!important;margin-left:0!important;margin-right:0!important}
+    [style*="padding:56px 80px"],[style*="padding:56px 80px 48px"],[style*="padding:0 80px"],[style*="padding:72px 80px"],[style*="padding:88px 80px"],[style*="padding:44px"],[style*="padding:36px"],[style*="padding:56px 80px 56px"],[style*="padding:40px 80px"],[style*="padding:0 80px 40px"],[style*="padding:0 80px 72px"],[style*="padding:0 80px 88px"]{padding-left:16px!important;padding-right:16px!important}
+    [style*="margin:0 80px"],[style*="margin:56px 80px"],[style*="margin:0 80px 72px"],[style*="margin:0 80px 88px"],[style*="margin:56px 80px 24px"],[style*="margin:72px 80px 24px"]{margin-left:0!important;margin-right:0!important}
+    [style*="grid-template-columns:repeat(3,"],[style*="grid-template-columns:repeat(4,"],[style*="grid-template-columns:repeat(2,"]{grid-template-columns:1fr!important}
+    [style*="flex-direction:row"],[style*="gap:48px"],[style*="gap:64px"]{flex-direction:column!important}
+    [style*="height:420px"],[style*="height:440px"],[style*="height:260px"],[style*="height:280px"],[style*="height:340px"],[style*="height:220px"],[style*="height:200px"]{height:auto!important;max-height:200px!important}
+    [style*="position:sticky;top:24px"]{position:static!important}
   }
 </style>
 </head>
