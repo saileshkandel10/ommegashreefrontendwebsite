@@ -103,7 +103,7 @@
 
 <!-- stats + video -->
 <div style="padding:88px 80px;display:flex;flex-wrap:wrap;gap:48px;align-items:center">
-<div style="flex:1 1 520px;min-width:0;height:340px;border-radius:24px;background:#2B6684;display:flex;align-items:center;justify-content:center"><a href="#" aria-label="Play company video" style="width:84px;height:84px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center"><svg width="28" height="28" viewBox="0 0 24 24" fill="#BE3057" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></a></div>
+<div style="flex:1 1 520px;min-width:0;height:340px;border-radius:24px;background:#2B6684;display:flex;align-items:center;justify-content:center"><a href="https://www.youtube.com/watch?v=AHQopkn2v1A&t=7s" aria-label="Play company video" style="width:84px;height:84px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center"><svg width="28" height="28" viewBox="0 0 24 24" fill="#BE3057" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></a></div>
 <div style="flex:1 1 440px;min-width:0">
 <h2 style="font-family:Sora;font-size:36px;margin:0 0 12px;color:#2E2627">Company at a glance</h2>
 <p style="font-size:16px;line-height:1.7;color:#5A4E50;margin:0 0 28px">See how a Chitwan factory became one of Nepal's modern pharmaceutical manufacturers.</p>
