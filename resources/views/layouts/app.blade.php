@@ -8,6 +8,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&family=Noto+Sans+Devanagari:wght@500&display=swap" rel="stylesheet">
 @vite(['resources/css/app.css','resources/js/app.js'])
 <style>
+  a{text-decoration:none}
+  a:hover{text-decoration:none}
   .dropdown:hover .dropdown-menu{display:block}
   .dropdown-menu{display:none}
   .card-hover{transition:transform .2s,box-shadow .2s,border-color .2s}
