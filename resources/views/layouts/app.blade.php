@@ -23,16 +23,17 @@
   img{max-width:100%;height:auto;display:block}
   .container{width:100%;max-width:1440px;margin:0 auto;padding:0 20px;box-sizing:border-box}
   header .menu-toggle{display:none}
+  .desktop-nav{display:flex}
   @media (max-width:768px){
     body{font-size:14px}
-    .topbar,.header-main{padding:0 20px!important}
     header{padding:0 20px;height:auto}
-    header nav{display:none;position:absolute;top:80px;left:0;right:0;background:#fff;flex-direction:column;padding:20px;border-bottom:1px solid #EBDDE1;gap:0;z-index:60}
-    header nav.open{display:flex}
-    header nav a,header nav .dropdown>a{padding:12px 0;border-bottom:1px solid #F3F3F5;font-size:16px;display:block;width:100%}
-    .dropdown-menu{position:static;box-shadow:none;border:none;padding:0;width:100%;min-width:auto;background:#FBF8F9}
-    .dropdown-menu a{padding:10px 20px;font-size:14px;color:#5A4E50}
-    .dropdown-menu.show{display:block}
+    header .menu-toggle{display:flex}
+    header .desktop-nav{display:none;position:absolute;top:80px;left:0;right:0;background:#fff;flex-direction:column;padding:20px;border-bottom:1px solid #EBDDE1;gap:0;z-index:60;width:100%}
+    header .desktop-nav.open{display:flex}
+    header .desktop-nav a,header .desktop-nav .dropdown>a{padding:12px 0;border-bottom:1px solid #F3F3F5;font-size:16px;display:block;width:100%}
+    .desktop-nav .dropdown-menu{position:static;box-shadow:none;border:none;padding:0;width:100%;min-width:auto;background:#FBF8F9}
+    .desktop-nav .dropdown-menu a{padding:10px 20px;font-size:14px;color:#5A4E50}
+    .desktop-nav .dropdown-menu.show{display:block}
     header .menu-toggle{display:flex}
     header .contact-btn{padding:10px 20px;font-size:13px}
     h1{font-size:36px!important;line-height:1.2!important}
@@ -73,7 +74,7 @@
 <header style="background:#fff;padding:0 20px;height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;border-bottom:1px solid #EBDDE1;position:sticky;top:0;z-index:40;position:relative">
   <a href="/" style="display:flex;align-items:center"><img src="/images/logo.png" alt="Om Megashree Pharmaceuticals" style="height:50px;width:auto;display:block"></a>
   <button class="menu-toggle" style="background:none;border:none;color:#2E2627;font-size:24px;cursor:pointer">☰</button>
-  <nav style="display:flex;gap:28px;font-size:15px;font-weight:500;flex-wrap:wrap;color:#2E2627">
+  <nav class="desktop-nav" style="display:flex;gap:28px;font-size:15px;font-weight:500;flex-wrap:wrap;color:#2E2627">
   <a href="/" style="color:#2E2627">Home</a>
   <div class="dropdown" style="position:relative">
     <a href="/about" style="color:#2E2627">About</a>
@@ -127,8 +128,8 @@
 <div style="border-top:1px solid rgba(255,255,255,.14);margin-top:40px;padding-top:20px;font-size:13px">Copyright ©2026 ommegashreepharmaceuticals.com</div>
 </div>
 <script>
-  var toggle=document.querySelector('.menu-toggle');var closeBtn=document.querySelector('.close-menu');var nav=document.querySelector('header nav');if(toggle){toggle.onclick=function(){nav.classList.toggle('open');toggle.style.display=nav.classList.contains('open')?'none':'flex';closeBtn.style.display=nav.classList.contains('open')?'block':'none';}}if(closeBtn){closeBtn.onclick=function(){nav.classList.remove('open');toggle.style.display='flex';closeBtn.style.display='none';}}
-  var dropdowns=document.querySelectorAll('.dropdown > a');dropdowns.forEach(function(d){d.onclick=function(e){if(window.innerWidth<=768){e.preventDefault();var menu=d.nextElementSibling;if(menu&&menu.classList.contains('dropdown-menu')){menu.classList.toggle('show');}}}});
+  var toggle=document.querySelector('.menu-toggle');var closeBtn=document.querySelector('.close-menu');var nav=document.querySelector('.desktop-nav');if(toggle){toggle.onclick=function(){nav.classList.toggle('open');toggle.style.display=nav.classList.contains('open')?'none':'flex';closeBtn.style.display=nav.classList.contains('open')?'block':'none';}}if(closeBtn){closeBtn.onclick=function(){nav.classList.remove('open');toggle.style.display='flex';closeBtn.style.display='none';}}
+  var dropdowns=document.querySelectorAll('.desktop-nav .dropdown > a');dropdowns.forEach(function(d){d.onclick=function(e){if(window.innerWidth<=768){e.preventDefault();var menu=d.nextElementSibling;if(menu&&menu.classList.contains('dropdown-menu')){menu.classList.toggle('show');}}}});
 </script>
 </body>
 </html>
