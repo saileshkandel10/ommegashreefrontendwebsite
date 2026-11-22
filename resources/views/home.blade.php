@@ -5,25 +5,31 @@
 
 <!-- hero slider -->
 <div style="position:relative;width:100%;height:720px;overflow:hidden;color:#fff">
-<div style="position:absolute;inset:0;background:url('/images/professional/unnamed.webp') center center/cover no-repeat"></div>
+<div id="slider-track" style="position:absolute;inset:0;display:flex;transition:transform .7s ease;width:500%">
+<div style="flex:none;width:20%;position:relative;background:url('/images/slider/1.jpg') center center/cover no-repeat"></div>
+<div style="flex:none;width:20%;position:relative;background:url('/images/slider/2.jpg') center center/cover no-repeat"></div>
+<div style="flex:none;width:20%;position:relative;background:url('/images/slider/3.jpg') center center/cover no-repeat"></div>
+<div style="flex:none;width:20%;position:relative;background:url('/images/slider/4.jpg') center center/cover no-repeat"></div>
+<div style="flex:none;width:20%;position:relative;background:url('/images/slider/5.jpg') center center/cover no-repeat"></div>
+</div>
 <div style="position:absolute;inset:0;background:rgba(46,38,39,.28)"></div>
-<div style="position:absolute;top:28px;right:80px;background:#fff;border-radius:999px;padding:8px 18px;font-family:Sora;font-weight:600;font-size:14px;color:#2E2627"><span style="color:#BE3057">01</span> / 05</div>
-<div style="position:relative;height:100%;padding:0 140px 120px;display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;max-width:960px">
+<div style="position:absolute;top:28px;right:80px;background:#fff;border-radius:999px;padding:8px 18px;font-family:Sora;font-weight:600;font-size:14px;color:#2E2627"><span id="slide-num" style="color:#BE3057">01</span> / 05</div>
+<div style="position:relative;height:100%;padding:0 140px 120px;display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;max-width:960px;z-index:10">
 <div style="display:inline-flex;align-self:flex-start;background:#fff;border-radius:999px;padding:9px 18px;font-size:13px;font-weight:600;color:#BE3057;letter-spacing:.3px">Nepal's 1st IPO-listed pharmaceuticals company</div>
 <h1 style="font-family:Sora;font-size:64px;line-height:1.08;margin:26px 0 16px;color:#fff;letter-spacing:-1.2px">Quality medicine, made in Nepal for Nepal.</h1>
 <div style="font-family:'Noto Sans Devanagari';font-weight:500;font-size:24px;color:#FFD3DE;margin-bottom:18px;min-height:38px">स्वास्थ्य र राष्ट्रका लागि एक सङ्कल्प</div>
 <p style="font-size:19px;line-height:1.65;color:#fff;margin:0 0 36px;max-width:600px;min-height:94px">Innovative healthcare solutions, from cardiac and anti-diabetic care to everyday medicines, made to cGMP guidelines and European standards.</p>
 <div style="display:flex;gap:14px;flex-wrap:wrap"><a href="/products" style="background:#BE3057;color:#fff;padding:17px 34px;border-radius:999px;font-weight:600">Explore Products</a><a href="#" style="border:1.5px solid #fff;color:#fff;padding:16px 34px;border-radius:999px;font-weight:600">Watch Our Story</a></div>
 </div>
-<a href="#" aria-label="Previous slide" style="position:absolute;left:28px;top:50%;margin-top:-28px;width:56px;height:56px;border:1.5px solid #fff;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></a>
-<a href="#" aria-label="Next slide" style="position:absolute;right:28px;top:50%;margin-top:-28px;width:56px;height:56px;background:#BE3057;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg></a>
-<div style="position:absolute;right:140px;bottom:150px;background:#fff;border-radius:20px;padding:18px 26px"><div style="font-family:Sora;font-weight:700;font-size:32px;color:#BE3057">70+</div><div style="font-size:13px;color:#5A4E50">Product licenses</div></div>
-<div style="position:absolute;left:0;right:0;bottom:0;padding:0 80px 32px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px">
-<div style="display:block;opacity:1"><div style="height:4px;border-radius:4px;background:rgba(255,255,255,.35);overflow:hidden"><div class="bar on" style="background:#fff"></div></div><div style="display:flex;gap:12px;align-items:baseline;margin-top:14px"><span style="font-family:Sora;font-weight:700;font-size:14px;color:#FFD3DE">01</span><span style="font-size:15px;font-weight:600;line-height:1.4;color:#fff">Our promise</span></div></div>
-<div style="display:block;opacity:.65"><div style="height:4px;border-radius:4px;background:rgba(255,255,255,.35);overflow:hidden"><div class="bar" style="background:#fff"></div></div><div style="display:flex;gap:12px;align-items:baseline;margin-top:14px"><span style="font-family:Sora;font-weight:700;font-size:14px;color:#FFD3DE">02</span><span style="font-size:15px;font-weight:600;line-height:1.4;color:#fff">Grand Opening</span></div></div>
-<div style="display:block;opacity:.65"><div style="height:4px;border-radius:4px;background:rgba(255,255,255,.35);overflow:hidden"><div class="bar" style="background:#fff"></div></div><div style="display:flex;gap:12px;align-items:baseline;margin-top:14px"><span style="font-family:Sora;font-weight:700;font-size:14px;color:#FFD3DE">03</span><span style="font-size:15px;font-weight:600;line-height:1.4;color:#fff">Inauguration, 7th Falgun 2080</span></div></div>
-<div style="display:block;opacity:.65"><div style="height:4px;border-radius:4px;background:rgba(255,255,255,.35);overflow:hidden"><div class="bar" style="background:#fff"></div></div><div style="display:flex;gap:12px;align-items:baseline;margin-top:14px"><span style="font-family:Sora;font-weight:700;font-size:14px;color:#FFD3DE">04</span><span style="font-size:15px;font-weight:600;line-height:1.4;color:#fff">Dematerialization Agreement</span></div></div>
-<div style="display:block;opacity:.65"><div style="height:4px;border-radius:4px;background:rgba(255,255,255,.35);overflow:hidden"><div class="bar" style="background:#fff"></div></div><div style="display:flex;gap:12px;align-items:baseline;margin-top:14px"><span style="font-family:Sora;font-weight:700;font-size:14px;color:#FFD3DE">05</span><span style="font-size:15px;font-weight:600;line-height:1.4;color:#fff">9th AGM: New Board</span></div></div>
+<a href="#" id="slide-prev" aria-label="Previous slide" style="position:absolute;left:28px;top:50%;margin-top:-28px;width:56px;height:56px;border:1.5px solid #fff;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:10"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></a>
+<a href="#" id="slide-next" aria-label="Next slide" style="position:absolute;right:28px;top:50%;margin-top:-28px;width:56px;height:56px;background:#BE3057;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:10"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg></a>
+<div style="position:absolute;right:140px;bottom:150px;background:#fff;border-radius:20px;padding:18px 26px;z-index:10"><div style="font-family:Sora;font-weight:700;font-size:32px;color:#BE3057">70+</div><div style="font-size:13px;color:#5A4E50">Product licenses</div></div>
+<div style="position:absolute;left:0;right:0;bottom:0;padding:0 80px 32px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px;z-index:10">
+<div class="slide-dot active" data-index="0"><div style="height:4px;border-radius:4px;background:rgba(255,255,255,.35);overflow:hidden"><div class="bar on" style="background:#fff;width:100%"></div></div><div style="display:flex;gap:12px;align-items:baseline;margin-top:14px"><span style="font-family:Sora;font-weight:700;font-size:14px;color:#FFD3DE">01</span><span style="font-size:15px;font-weight:600;line-height:1.4;color:#fff">Our promise</span></div></div>
+<div class="slide-dot" data-index="1"><div style="height:4px;border-radius:4px;background:rgba(255,255,255,.35);overflow:hidden"><div class="bar" style="background:#fff"></div></div><div style="display:flex;gap:12px;align-items:baseline;margin-top:14px"><span style="font-family:Sora;font-weight:700;font-size:14px;color:#FFD3DE">02</span><span style="font-size:15px;font-weight:600;line-height:1.4;color:#fff">Grand Opening</span></div></div>
+<div class="slide-dot" data-index="2"><div style="height:4px;border-radius:4px;background:rgba(255,255,255,.35);overflow:hidden"><div class="bar" style="background:#fff"></div></div><div style="display:flex;gap:12px;align-items:baseline;margin-top:14px"><span style="font-family:Sora;font-weight:700;font-size:14px;color:#FFD3DE">03</span><span style="font-size:15px;font-weight:600;line-height:1.4;color:#fff">Inauguration, 7th Falgun 2080</span></div></div>
+<div class="slide-dot" data-index="3"><div style="height:4px;border-radius:4px;background:rgba(255,255,255,.35);overflow:hidden"><div class="bar" style="background:#fff"></div></div><div style="display:flex;gap:12px;align-items:baseline;margin-top:14px"><span style="font-family:Sora;font-weight:700;font-size:14px;color:#FFD3DE">04</span><span style="font-size:15px;font-weight:600;line-height:1.4;color:#fff">Dematerialization Agreement</span></div></div>
+<div class="slide-dot" data-index="4"><div style="height:4px;border-radius:4px;background:rgba(255,255,255,.35);overflow:hidden"><div class="bar" style="background:#fff"></div></div><div style="display:flex;gap:12px;align-items:baseline;margin-top:14px"><span style="font-family:Sora;font-weight:700;font-size:14px;color:#FFD3DE">05</span><span style="font-size:15px;font-weight:600;line-height:1.4;color:#fff">9th AGM: New Board</span></div></div>
 </div>
 </div>
 
@@ -159,6 +165,18 @@
     [style*="grid-column:span 2;grid-row:span 2"]{grid-column:span 1!important;grid-row:span 1!important}
   }
 </style>
+<script>
+  var slideIndex=0;var totalSlides=5;var track=document.getElementById('slider-track');var slideNum=document.getElementById('slide-num');var dots=document.querySelectorAll('.slide-dot');var timer=null;
+  function updateSlider(){track.style.transform='translateX(-'+(slideIndex*20)+'%)';slideNum.textContent=(slideIndex+1).toString().padStart(2,'0');dots.forEach(function(d,i){d.classList.toggle('active',i===slideIndex);var bar=d.querySelector('.bar');if(bar){bar.style.width=i===slideIndex?'100%':'0';}});}
+  function nextSlide(){slideIndex=(slideIndex+1)%totalSlides;updateSlider();resetTimer();}
+  function prevSlide(){slideIndex=(slideIndex-1+totalSlides)%totalSlides;updateSlider();resetTimer();}
+  function goToSlide(i){slideIndex=i;updateSlider();resetTimer();}
+  function resetTimer(){if(timer){clearInterval(timer);}timer=setInterval(nextSlide,5000);}
+  document.getElementById('slide-next').onclick=function(e){e.preventDefault();nextSlide();};
+  document.getElementById('slide-prev').onclick=function(e){e.preventDefault();prevSlide();};
+  dots.forEach(function(d){d.onclick=function(){goToSlide(parseInt(d.getAttribute('data-index')));};});
+  resetTimer();
+</script>
 
 </div>
 @endsection
