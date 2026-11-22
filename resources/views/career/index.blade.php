@@ -33,7 +33,7 @@ $steps = [
       <p style="font-size:18px;line-height:1.6;color:#5A4E50;margin:0 0 28px">Join a dedicated team of 100+, working to bring quality medicine to more people across Nepal.</p>
       <div style="display:flex;gap:14px;flex-wrap:wrap"><a href="#" style="background:#BE3057;color:#fff;padding:15px 30px;border-radius:999px;font-weight:600">View open roles</a><a href="#apply" style="border:1.5px solid #BE3057;color:#BE3057;padding:14px 30px;border-radius:999px;font-weight:600">Send your CV</a></div>
     </div>
-    <img src="/images/professional/team.jpg" alt="Team at Chitwan factory" style="width:100%;height:100%;object-fit:cover;border-radius:28px">
+    <img src="/images/professional/unnamed.webp" alt="Team at Chitwan factory" style="width:100%;height:100%;object-fit:cover;border-radius:28px">
   </div>
 
   <!-- values -->
