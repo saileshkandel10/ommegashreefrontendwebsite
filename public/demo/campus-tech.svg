@@ -1,0 +1,13 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="800" fill="#EFF7FF"/>
+<rect x="70" y="78" width="1060" height="644" rx="32" fill="#FFFFFF"/>
+<rect x="178" y="243" width="834" height="320" rx="32" fill="#0B6BBF"/>
+<rect x="276" y="314" width="114" height="114" rx="18" fill="#EFF7FF"/>
+<rect x="427" y="314" width="114" height="114" rx="18" fill="#EFF7FF"/>
+<rect x="578" y="314" width="114" height="114" rx="18" fill="#EFF7FF"/>
+<rect x="729" y="314" width="114" height="114" rx="18" fill="#EFF7FF"/>
+<path d="M178 243L594 132L1012 243" stroke="#0B6BBF" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M109 649H1098" stroke="#D5E9FF" stroke-width="18" stroke-linecap="round"/>
+<text x="124" y="164" fill="#0F2745" font-family="Arial, sans-serif" font-size="56" font-weight="700">Technology Campus</text>
+<text x="124" y="213" fill="#6B7A90" font-family="Arial, sans-serif" font-size="26">Bengaluru-style urban university artwork</text>
+</svg>
