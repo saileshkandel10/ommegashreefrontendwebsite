@@ -77,7 +77,7 @@ $steps = [
 
   <!-- apply -->
     <div id="apply" style="margin:56px 80px 72px;display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start">
-      <div style="flex:1 1 340px;min-width:0"><div style="color:#BE3057;font-weight:600;font-size:14px;letter-spacing:1.5px">APPLY</div><h2 style="font-family:Sora;font-size:36px;line-height:1.2;margin:10px 0 16px;color:#2E2627">Do not see your role? Send us your CV.</h2><p style="font-size:16px;line-height:1.7;color:#5A4E50;margin:0 0 20px">Tell us about yourself and we will keep your details for future openings.</p><div style="font-size:14px;color:#5A4E50;line-height:1.9">CV formats: PDF, DOC, DOCX<br>Maximum size: 5 MB<br>Questions: info@ommegashreepharmaceuticals.com</div></div>
+      <div style="flex:1 1 340px;min-width:0"><div style="color:#BE3057;font-weight:600;font-size:14px;letter-spacing:1.5px">APPLY</div><h2 style="font-family:Sora;font-size:36px;line-height:1.2;margin:10px 0 16px;color:#2E2627">Do not see your role? Send us your CV.</h2><p style="font-size:16px;line-height:1.7;color:#5A4E50;margin:0 0 20px">Tell us about yourself and we will keep your details for future openings.</p><div style="font-size:14px;color:#5A4E50;line-height:1.9">CV formats: PDF, DOC, DOCX<br>Maximum size: 5 MB<br>Questions: info@ommegashree.com</div></div>
       <form method="POST" action="/enquiry">
         @csrf
         <input type="hidden" name="enquiry_type" value="Career">
