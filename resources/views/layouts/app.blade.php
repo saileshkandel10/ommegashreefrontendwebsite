@@ -20,27 +20,51 @@
   .form-input{width:100%;height:46px;border:1px solid #EBDDE1;border-radius:12px;padding:0 16px;font-size:14px;box-sizing:border-box;background:#FBF8F9;color:#5A4E50}
   .form-input:focus{border-color:#BE3057;outline:none}
   .form-label{font-size:13px;font-weight:600;display:block;margin-bottom:6px;color:#5A4E50}
+  img{max-width:100%;height:auto;display:block}
+  .container{width:100%;max-width:1440px;margin:0 auto;padding:0 20px;box-sizing:border-box}
   @media (max-width:768px){
     body{font-size:14px}
-    header{padding:0 20px}
-    header nav{display:none}
-    .dropdown-menu{position:static;box-shadow:none;border:none;padding:0}
-    .dropdown-menu a{padding:8px 20px}
-    .page-header,.section{padding-left:20px;padding-right:20px}
-    h1{font-size:40px !important}
-    h2{font-size:32px !important}
-    .grid-4,.products-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
-    @media (max-width:480px){.grid-4,.products-grid{grid-template-columns:1fr!important}}
+    .topbar,.header-main{padding:0 20px!important}
+    header{padding:0 20px;height:auto}
+    header nav{display:none;position:absolute;top:80px;left:0;right:0;background:#fff;flex-direction:column;padding:20px;border-bottom:1px solid #EBDDE1;gap:0;z-index:60}
+    header nav.open{display:flex}
+    header nav a,header nav .dropdown>a{padding:12px 0;border-bottom:1px solid #F3F3F5;font-size:16px;display:block;width:100%}
+    .dropdown-menu{position:static;box-shadow:none;border:none;padding:0;width:100%;min-width:auto;background:#FBF8F9}
+    .dropdown-menu a{padding:10px 20px;font-size:14px;color:#5A4E50}
+    .dropdown-menu.show{display:block}
+    header .menu-toggle{display:flex}
+    header .contact-btn{padding:10px 20px;font-size:13px}
+    h1{font-size:36px!important;line-height:1.2!important}
+    h2{font-size:28px!important;line-height:1.3!important}
+    .page-header,.section-header{padding:40px 20px!important}
+    .container{padding:0 20px}
+    .grid-4,.products-grid,.expertise-grid,.values-grid{grid-template-columns:1fr!important}
+    .timeline-item:last-child .timeline-line{display:none}
+    footer{padding:40px 20px!important;display:flex;flex-direction:column!important;gap:24px!important}
+    footer>div{flex-direction:column!important;gap:24px!important}
+    footer>div>div{min-width:auto!important}
+    .hero-image{height:auto!important;max-height:300px!important}
+    .page-img{height:auto!important}
+    .two-col,.three-col{flex-direction:column!important}
+    .card-stack{margin-bottom:24px}
+    .brand-text{font-size:16px!important}
+  }
+  @media (max-width:480px){
+    h1{font-size:30px!important}
+    h2{font-size:24px!important}
+    header{height:auto;padding:12px 20px}
+    .menu-toggle{margin-left:auto}
   }
 </style>
 </head>
 <body style="margin:0;font-family:Inter,system-ui,sans-serif;color:#2E2627;background:#FBF8F9">
-<div style="background:#2B6684;color:#fff;font-size:13px;padding:10px 80px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center">
+<div style="background:#2B6684;color:#fff;font-size:13px;padding:10px 20px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center">
   <div style="display:flex;gap:28px;flex-wrap:wrap;color:#fff"><a href="tel:+977015244310" style="color:#fff">01-5244310</a><a href="mailto:info@ommegashreepharmaceuticals.com" style="color:#fff">info@ommegashreepharmaceuticals.com</a></div>
   <div style="display:flex;gap:24px;align-items:center;color:#fff"><a href="https://nepal.pharmasoftwares.com/" style="color:#fff">SFA Login</a><a href="#" style="color:#fff">EN / नेपाली</a></div>
 </div>
-<header style="background:#fff;padding:0 80px;height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;border-bottom:1px solid #EBDDE1;position:sticky;top:0;z-index:40">
-  <a href="/" style="display:flex;align-items:center"><img src="/images/logo.png" alt="Om Megashree Pharmaceuticals" style="height:60px;width:auto;display:block"></a>
+<header style="background:#fff;padding:0 20px;height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;border-bottom:1px solid #EBDDE1;position:sticky;top:0;z-index:40">
+  <a href="/" style="display:flex;align-items:center"><img src="/images/logo.png" alt="Om Megashree Pharmaceuticals" style="height:50px;width:auto;display:block"></a>
+  <button class="menu-toggle" style="display:none;background:none;border:none;color:#2E2627;font-size:24px;cursor:pointer">☰</button>
   <nav style="display:flex;gap:28px;font-size:15px;font-weight:500;flex-wrap:wrap;color:#2E2627">
   <a href="/" style="color:#2E2627">Home</a>
   <div class="dropdown" style="position:relative">
@@ -79,6 +103,7 @@
   </div>
   <a href="/contact" style="color:#2E2627">Contact</a>
 </nav>
+  <button class="close-menu" style="display:none;background:none;border:none;color:#2E2627;font-size:24px;cursor:pointer;position:absolute;top:12px;right:16px">✕</button>
   <div style="display:flex;gap:12px;align-items:center"><a href="/contact" style="background:#BE3057;color:#fff;padding:13px 24px;border-radius:999px;font-weight:600;font-size:14px">Get in Touch</a></div>
 </header>
 <main>@yield('content')</main>
@@ -93,5 +118,8 @@
 </div>
 <div style="border-top:1px solid rgba(255,255,255,.14);margin-top:40px;padding-top:20px;font-size:13px">Copyright ©2026 ommegashreepharmaceuticals.com</div>
 </div>
+<script>
+  var toggle=document.querySelector('.menu-toggle');var closeBtn=document.querySelector('.close-menu');var nav=document.querySelector('header nav');if(toggle){toggle.onclick=function(){nav.classList.toggle('open');toggle.style.display=nav.classList.contains('open')?'none':'flex';closeBtn.style.display=nav.classList.contains('open')?'block':'none';}}if(closeBtn){closeBtn.onclick=function(){nav.classList.remove('open');toggle.style.display='flex';closeBtn.style.display='none';}}
+</script>
 </body>
 </html>
