@@ -27,9 +27,9 @@
   @media (max-width:768px){
     body{font-size:14px}
     header{padding:0 20px;height:auto}
-    header .menu-toggle{display:flex}
-    header .desktop-nav{display:none;position:absolute;top:80px;left:0;right:0;background:#fff;flex-direction:column;padding:20px;border-bottom:1px solid #EBDDE1;gap:0;z-index:60;width:100%}
-    header .desktop-nav.open{display:flex}
+    header .menu-toggle{display:flex!important}
+    header .desktop-nav{display:none!important;position:absolute;top:80px;left:0;right:0;background:#fff;flex-direction:column;padding:20px;border-bottom:1px solid #EBDDE1;gap:0;z-index:60;width:100%}
+    header .desktop-nav.open{display:flex!important}
     header .desktop-nav a,header .desktop-nav .dropdown>a{padding:12px 0;border-bottom:1px solid #F3F3F5;font-size:16px;display:block;width:100%}
     .desktop-nav .dropdown-menu{position:static;box-shadow:none;border:none;padding:0;width:100%;min-width:auto;background:#FBF8F9}
     .desktop-nav .dropdown-menu a{padding:10px 20px;font-size:14px;color:#5A4E50}
