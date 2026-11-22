@@ -13,8 +13,8 @@
 <div style="flex:none;width:20%;position:relative;background:url('/images/slider/5.jpg') center center/cover no-repeat"></div>
 </div>
 <div style="position:absolute;inset:0;background:rgba(46,38,39,.28)"></div>
-<div style="position:absolute;top:28px;right:80px;background:#fff;border-radius:999px;padding:8px 18px;font-family:Sora;font-weight:600;font-size:14px;color:#2E2627"><span id="slide-num" style="color:#BE3057">01</span> / 05</div>
-<div style="position:relative;height:100%;padding:0 140px 120px;display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;max-width:960px;z-index:10">
+<div style="position:absolute;top:28px;right:80px;background:#fff;border-radius:999px;padding:8px 18px;font-family:Sora;font-weight:600;font-size:14px;color:#2E2627" class="hero-counter"><span id="slide-num" style="color:#BE3057">01</span> / 05</div>
+<div class="hero-text-content" style="position:relative;height:100%;padding:0 140px 120px;display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;max-width:960px;z-index:10">
 <div style="display:inline-flex;align-self:flex-start;background:#fff;border-radius:999px;padding:9px 18px;font-size:13px;font-weight:600;color:#BE3057;letter-spacing:.3px">Nepal's 1st IPO-listed pharmaceuticals company</div>
 <h1 style="font-family:Sora;font-size:64px;line-height:1.08;margin:26px 0 16px;color:#fff;letter-spacing:-1.2px">Quality medicine, made in Nepal for Nepal.</h1>
 <div style="font-family:'Noto Sans Devanagari';font-weight:500;font-size:24px;color:#FFD3DE;margin-bottom:18px;min-height:38px">स्वास्थ्य र राष्ट्रका लागि एक सङ्कल्प</div>
@@ -23,8 +23,8 @@
 </div>
 <a href="#" id="slide-prev" aria-label="Previous slide" style="position:absolute;left:28px;top:50%;margin-top:-28px;width:56px;height:56px;border:1.5px solid #fff;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:10"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></a>
 <a href="#" id="slide-next" aria-label="Next slide" style="position:absolute;right:28px;top:50%;margin-top:-28px;width:56px;height:56px;background:#BE3057;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:10"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg></a>
-<div style="position:absolute;right:140px;bottom:150px;background:#fff;border-radius:20px;padding:18px 26px;z-index:10"><div style="font-family:Sora;font-weight:700;font-size:32px;color:#BE3057">70+</div><div style="font-size:13px;color:#5A4E50">Product licenses</div></div>
-<div style="position:absolute;left:0;right:0;bottom:0;padding:0 80px 32px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px;z-index:10">
+<div class="hero-stats" style="position:absolute;right:140px;bottom:150px;background:#fff;border-radius:20px;padding:18px 26px;z-index:10"><div style="font-family:Sora;font-weight:700;font-size:32px;color:#BE3057">70+</div><div style="font-size:13px;color:#5A4E50">Product licenses</div></div>
+<div class="hero-dots" style="position:absolute;left:0;right:0;bottom:0;padding:0 80px 32px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px;z-index:10">
 <div class="slide-dot active" data-index="0"><div style="height:4px;border-radius:4px;background:rgba(255,255,255,.35);overflow:hidden"><div class="bar on" style="background:#fff;width:100%"></div></div><div style="display:flex;gap:12px;align-items:baseline;margin-top:14px"><span style="font-family:Sora;font-weight:700;font-size:14px;color:#FFD3DE">01</span><span style="font-size:15px;font-weight:600;line-height:1.4;color:#fff">Our promise</span></div></div>
 <div class="slide-dot" data-index="1"><div style="height:4px;border-radius:4px;background:rgba(255,255,255,.35);overflow:hidden"><div class="bar" style="background:#fff"></div></div><div style="display:flex;gap:12px;align-items:baseline;margin-top:14px"><span style="font-family:Sora;font-weight:700;font-size:14px;color:#FFD3DE">02</span><span style="font-size:15px;font-weight:600;line-height:1.4;color:#fff">Grand Opening</span></div></div>
 <div class="slide-dot" data-index="2"><div style="height:4px;border-radius:4px;background:rgba(255,255,255,.35);overflow:hidden"><div class="bar" style="background:#fff"></div></div><div style="display:flex;gap:12px;align-items:baseline;margin-top:14px"><span style="font-family:Sora;font-weight:700;font-size:14px;color:#FFD3DE">03</span><span style="font-size:15px;font-weight:600;line-height:1.4;color:#fff">Inauguration, 7th Falgun 2080</span></div></div>
@@ -183,6 +183,8 @@
     [style*="flex:1 1 240px"],[style*="flex:1 1 480px"],[style*="flex:1 1 440px"],[style*="flex:1 1 520px"],[style*="flex:1 1 380px"],[style*="flex:1 1 360px"],[style*="flex:1.4 1 520px"]{flex:1 1 100%!important}
     /* hero bottom dots text size */
     [style*="font-family:Sora;font-weight:700;font-size:32px;color:#BE3057"]{font-size:24px!important}
+    /* mobile: hide writing, show only image slider */
+    .hero-counter,.hero-text-content,.hero-stats,.hero-dots{display:none!important}
   }
   @media (max-width:480px){
     h1{font-size:28px!important}
@@ -199,6 +201,8 @@
     [style*="height:420px"],[style*="height:440px"],[style*="height:260px"],[style*="height:280px"],[style*="height:340px"],[style*="height:220px"],[style*="height:200px"],[style*="height:300px"],[style*="height:142px"]{height:auto!important;max-height:200px!important}
     [style*="grid-template-columns:repeat(2,minmax(0,1fr))"][style*="gap:16px"]{grid-template-columns:1fr!important}
     [style*="margin:0 80px 88px"][style*="background:#BE3057"]{padding:32px 16px!important}
+    /* mobile: hide writing, show only image slider */
+    .hero-counter,.hero-text-content,.hero-stats,.hero-dots{display:none!important}
   }
 </style>
 <script>
