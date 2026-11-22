@@ -74,7 +74,7 @@
 <header style="background:#fff;padding:0 20px;height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;border-bottom:1px solid #EBDDE1;position:sticky;top:0;z-index:40;position:relative">
   <a href="/" style="display:flex;align-items:center"><img src="/images/logo.png" alt="Om Megashree Pharmaceuticals" style="height:50px;width:auto;display:block"></a>
   <button class="menu-toggle" style="background:none;border:none;color:#2E2627;font-size:24px;cursor:pointer">☰</button>
-  <nav class="desktop-nav" style="display:flex;gap:28px;font-size:15px;font-weight:500;flex-wrap:wrap;color:#2E2627">
+  <nav class="desktop-nav" style="gap:28px;font-size:15px;font-weight:500;flex-wrap:wrap;color:#2E2627">
   <a href="/" style="color:#2E2627">Home</a>
   <div class="dropdown" style="position:relative">
     <a href="/about" style="color:#2E2627">About</a>
