@@ -30,9 +30,9 @@ $slug = fn($n)=>Illuminate\Support\Str::slug($n);
   <div style="padding:20px 80px 0;font-size:14px;color:#5A4E50">Showing {{ count($prods) }} products</div>
 
   <!-- grid -->
-  <div style="padding:20px 80px 72px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px">
+  <div style="padding:20px 80px 72px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
     @foreach($prods as $p)
-    <div class="card" style="background:#fff;border:1px solid #EBDDE1;border-radius:24px;overflow:hidden">
+    <div class="card card-hover" style="background:#fff;border:1px solid #EBDDE1;border-radius:24px;overflow:hidden">
       <div style="height:220px;background:#F9EBEF"><img src="/images/products/{{ $p['img'] }}" alt="{{ $p['n'] }}" style="width:100%;height:100%;object-fit:cover;display:block"></div>
       <div style="padding:24px">
         <div style="font-size:12px;font-weight:600;color:#BE3057;letter-spacing:1px">{{ $p['c'] }}</div>

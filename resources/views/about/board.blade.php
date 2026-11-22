@@ -12,6 +12,7 @@ $dirs=[
     ['i'=>'SP','n'=>'Dr. Sanjeev Pradhan','r'=>'Director','t'=>'Independent','td'=>'inline-block','bg'=>'#BE3057'],
 ];
 $about=["Chairperson's Message","Our Vision and Mission","Board of Directors","Who We Are","Our Expertise","Milestones","Quality Policy"];
+$aboutRoutes=['/chairpersons-message','/our-vision-and-mission','/board-of-directors','/who-we-are','/our-expertise-and-services','/milestones-and-achievements','/commitment-to-quality-and-society'];
 @endphp
 <div style="width:100%;max-width:1440px;margin:0 auto;background:#FBF8F9">
   <!-- page header -->
@@ -27,7 +28,7 @@ $about=["Chairperson's Message","Our Vision and Mission","Board of Directors","W
       <div style="background:#fff;border:1px solid #EBDDE1;border-radius:24px;padding:12px">
         <div style="font-family:Sora;font-weight:600;font-size:13px;letter-spacing:1px;color:#5A4E50;padding:12px 16px 8px">ABOUT</div>
         @foreach ($about as $i => $name)
-        <a href="#" style="display:block;padding:12px 16px;border-radius:14px;font-size:15px;font-weight:500;color:{{ $i===2?'#fff':'#2E2627' }};background:{{ $i===2?'#BE3057':'transparent' }}">{{ $name }}</a>
+        <a href="{{ $aboutRoutes[$i] }}" style="display:block;padding:12px 16px;border-radius:14px;font-size:15px;font-weight:500;color:{{ $i===2?'#fff':'#2E2627' }};background:{{ $i===2?'#BE3057':'transparent' }}">{{ $name }}</a>
         @endforeach
       </div>
     </div>

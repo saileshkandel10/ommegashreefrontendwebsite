@@ -1,6 +1,9 @@
 @extends('layouts.app')
 @section('title','Our Vision and Mission')
 @section('content')
+@php
+$aboutRoutes=['/chairpersons-message','/our-vision-and-mission','/board-of-directors','/who-we-are','/our-expertise-and-services','/milestones-and-achievements','/commitment-to-quality-and-society'];
+@endphp
 <div style="width:100%;max-width:1440px;margin:0 auto;background:#FAF8F9">
 <div style="background:#F8E9EF;padding:56px 80px 48px">
   <div style="font-size:14px;color:#77717A;margin-bottom:20px"><a href="/" style="color:#B72E5B;font-weight:600">Home</a> &nbsp;/&nbsp; About &nbsp;/&nbsp; Our Vision and Mission</div>
@@ -13,7 +16,7 @@
     <div style="background:#fff;border:1px solid #EAE5E8;border-radius:24px;padding:12px">
       <div style="font-family:Sora;font-weight:600;font-size:13px;letter-spacing:1px;color:#77717A;padding:12px 16px 8px">ABOUT</div>
       @foreach (["Chairperson's Message","Our Vision and Mission","Board of Directors","Who We Are","Our Expertise","Milestones","Quality Policy"] as $i => $name)
-      <a href="#" style="display:block;padding:12px 16px;border-radius:14px;font-size:15px;font-weight:500;color:{{ $i===1?'#fff':'#252329' }};background:{{ $i===1?'#B72E5B':'transparent' }}">{{ $name }}</a>
+      <a href="{{ $aboutRoutes[$i] }}" style="display:block;padding:12px 16px;border-radius:14px;font-size:15px;font-weight:500;color:{{ $i===1?'#fff':'#252329' }};background:{{ $i===1?'#B72E5B':'transparent' }}">{{ $name }}</a>
       @endforeach
     </div>
   </div>

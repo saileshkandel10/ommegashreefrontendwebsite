@@ -7,6 +7,30 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&family=Noto+Sans+Devanagari:wght@500&display=swap" rel="stylesheet">
 @vite(['resources/css/app.css','resources/js/app.js'])
+<style>
+  .dropdown:hover .dropdown-menu{display:block}
+  .dropdown-menu{display:none}
+  .card-hover{transition:transform .2s,box-shadow .2s,border-color .2s}
+  .card-hover:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.06);border-color:#BE3057}
+  .btn-primary{background:#BE3057;color:#fff;padding:12px 28px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;display:inline-block;border:none;cursor:pointer}
+  .btn-outline{border:1.5px solid #BE3057;color:#BE3057;padding:11px 28px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;display:inline-block;background:transparent}
+  .btn-outline:hover{background:#BE3057;color:#fff}
+  .form-input{width:100%;height:46px;border:1px solid #EBDDE1;border-radius:12px;padding:0 16px;font-size:14px;box-sizing:border-box;background:#FBF8F9;color:#5A4E50}
+  .form-input:focus{border-color:#BE3057;outline:none}
+  .form-label{font-size:13px;font-weight:600;display:block;margin-bottom:6px;color:#5A4E50}
+  @media (max-width:768px){
+    body{font-size:14px}
+    header{padding:0 20px}
+    header nav{display:none}
+    .dropdown-menu{position:static;box-shadow:none;border:none;padding:0}
+    .dropdown-menu a{padding:8px 20px}
+    .page-header,.section{padding-left:20px;padding-right:20px}
+    h1{font-size:40px !important}
+    h2{font-size:32px !important}
+    .grid-4,.products-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+    @media (max-width:480px){.grid-4,.products-grid{grid-template-columns:1fr!important}}
+  }
+</style>
 </head>
 <body style="margin:0;font-family:Inter,system-ui,sans-serif;color:#2E2627;background:#FBF8F9">
 <div style="background:#2B6684;color:#fff;font-size:13px;padding:10px 80px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center">

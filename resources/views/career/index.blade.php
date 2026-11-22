@@ -42,7 +42,7 @@ $steps = [
     <h2 style="font-family:Sora;font-size:36px;margin:10px 0 28px;color:#2E2627">What we value</h2>
     <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px">
       @foreach ($values as $v)
-      <div class="card" style="background:#fff;border:1px solid #EBDDE1;border-radius:22px;padding:28px"><div style="width:40px;height:40px;border-radius:12px;background:#F9EBEF;color:#BE3057;font-family:Sora;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:18px">{{ $v['n'] }}</div><div style="font-family:Sora;font-weight:600;font-size:20px;margin-bottom:8px">{{ $v['t'] }}</div><div style="font-size:15px;line-height:1.65;color:#5A4E50">{{ $v['d'] }}</div></div>
+      <div style="background:#fff;border:1px solid #EBDDE1;border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:16px"><div style="width:56px;height:56px;border-radius:16px;background:#F9EBEF;color:#BE3057;display:flex;align-items:center;justify-content:center;font-family:Sora;font-weight:700;font-size:22px">{{ $v['n'] }}</div><div style="font-family:Sora;font-weight:600;font-size:20px;margin-bottom:8px">{{ $v['t'] }}</div><div style="font-size:15px;line-height:1.65;color:#5A4E50">{{ $v['d'] }}</div></div>
       @endforeach
     </div>
   </div>
@@ -76,16 +76,21 @@ $steps = [
   </div>
 
   <!-- apply -->
-  <div id="apply" style="margin:56px 80px 72px;display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start">
-    <div style="flex:1 1 340px;min-width:0"><div style="color:#BE3057;font-weight:600;font-size:14px;letter-spacing:1.5px">APPLY</div><h2 style="font-family:Sora;font-size:36px;line-height:1.2;margin:10px 0 16px;color:#2E2627">Do not see your role? Send us your CV.</h2><p style="font-size:16px;line-height:1.7;color:#5A4E50;margin:0 0 20px">Tell us about yourself and we will keep your details for future openings.</p><div style="font-size:14px;color:#5A4E50;line-height:1.9">CV formats: PDF, DOC, DOCX<br>Maximum size: 5 MB<br>Questions: info@ommegashreepharmaceuticals.com</div></div>
-    <div style="flex:1 1 560px;min-width:0;background:#fff;border:1px solid #EBDDE1;border-radius:28px;padding:40px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px">
-      <div><div style="font-size:13px;font-weight:600;margin-bottom:8px">Full name</div><div style="height:46px;border:1px solid #EBDDE1;border-radius:12px;background:#FBF8F9;display:flex;align-items:center;padding:0 16px;font-size:14px;color:#5A4E50;box-sizing:border-box">Your name</div></div>
-      <div><div style="font-size:13px;font-weight:600;margin-bottom:8px">Email</div><div style="height:46px;border:1px solid #EBDDE1;border-radius:12px;background:#FBF8F9;display:flex;align-items:center;padding:0 16px;font-size:14px;color:#5A4E50;box-sizing:border-box">you@example.com</div></div>
-      <div><div style="font-size:13px;font-weight:600;margin-bottom:8px">Phone</div><div style="height:46px;border:1px solid #EBDDE1;border-radius:12px;background:#FBF8F9;display:flex;align-items:center;padding:0 16px;font-size:14px;color:#5A4E50;box-sizing:border-box">98XXXXXXXX</div></div>
-      <div><div style="font-size:13px;font-weight:600;margin-bottom:8px">Position</div><div style="height:46px;border:1px solid #EBDDE1;border-radius:12px;background:#FBF8F9;display:flex;align-items:center;padding:0 16px;font-size:14px;color:#5A4E50;box-sizing:border-box">General application</div></div>
-      <div style="grid-column:span 2"><div style="font-size:13px;font-weight:600;margin-bottom:8px">CV</div><div style="border:1.5px dashed #BE3057;border-radius:14px;background:#F9EBEF;padding:22px;text-align:center;font-size:14px;color:#BE3057;font-weight:600">Drop your CV here or browse</div></div>
-      <div style="grid-column:span 2"><div><div style="font-size:13px;font-weight:600;margin-bottom:8px">Message (optional)</div><div style="height:96px;border:1px solid #EBDDE1;border-radius:12px;background:#FBF8F9;display:flex;align-items:center;padding:0 16px;font-size:14px;color:#5A4E50;box-sizing:border-box">Tell us about your experience</div></div></div>
-      <div style="grid-column:span 2;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center"><div style="font-size:12px;color:#5A4E50;border:1px solid #EBDDE1;border-radius:10px;padding:12px 18px">[Turnstile spam check]</div><a href="#" style="background:#BE3057;color:#fff;padding:15px 34px;border-radius:999px;font-weight:600;font-size:15px">Submit application</a></div>
+    <div id="apply" style="margin:56px 80px 72px;display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start">
+      <div style="flex:1 1 340px;min-width:0"><div style="color:#BE3057;font-weight:600;font-size:14px;letter-spacing:1.5px">APPLY</div><h2 style="font-family:Sora;font-size:36px;line-height:1.2;margin:10px 0 16px;color:#2E2627">Do not see your role? Send us your CV.</h2><p style="font-size:16px;line-height:1.7;color:#5A4E50;margin:0 0 20px">Tell us about yourself and we will keep your details for future openings.</p><div style="font-size:14px;color:#5A4E50;line-height:1.9">CV formats: PDF, DOC, DOCX<br>Maximum size: 5 MB<br>Questions: info@ommegashreepharmaceuticals.com</div></div>
+      <form method="POST" action="/enquiry">
+        @csrf
+        <input type="hidden" name="enquiry_type" value="Career">
+        <div style="flex:1 1 560px;min-width:0;background:#fff;border:1px solid #EBDDE1;border-radius:28px;padding:40px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px">
+      <div><div class="form-label">Full name</div><input type="text" name="name" class="form-input"></div>
+      <div><div class="form-label">Email</div><input type="email" name="email" class="form-input"></div>
+      <div><div class="form-label">Phone</div><input type="text" name="phone" class="form-input"></div>
+      <div><div class="form-label">Position</div><input type="text" name="position" class="form-input" value="General application"></div>
+      <div style="grid-column:span 2"><div class="form-label">CV</div><div style="border:1.5px dashed #BE3057;border-radius:14px;background:#F9EBEF;padding:22px;text-align:center;font-size:14px;color:#BE3057;font-weight:600">Drop your CV here or browse</div></div>
+      <div style="grid-column:span 2"><div class="form-label">Message (optional)</div><textarea name="message" rows="4" class="form-input" style="height:96px;resize:vertical;padding:14px 16px"></textarea></div>
+      <div style="grid-column:span 2;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center"><button type="submit" class="btn-primary">Submit application</button></div>
+      </div>
+      </form>
     </div>
   </div>
 </div>

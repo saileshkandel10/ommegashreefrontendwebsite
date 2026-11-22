@@ -22,15 +22,18 @@
     </div>
 
     <!-- contact form -->
-    <div style="flex:1.4 1 520px;min-width:0;background:#fff;border:1px solid #EBDDE1;border-radius:28px;padding:44px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-content:start">
+    <div style="flex:1.4 1 520px;min-width:0;background:#fff;border:1px solid #EBDDE1;border-radius:28px;padding:44px">
       <div style="grid-column:span 2;font-family:Sora;font-weight:700;font-size:28px;color:#2E2627">Send us a message</div>
-      <div><div style="font-size:13px;font-weight:600;margin-bottom:8px">Full name</div><div style="height:46px;border:1px solid #EBDDE1;border-radius:12px;background:#FBF8F9;display:flex;align-items:flex-start;padding:14px 16px;font-size:14px;color:#5A4E50;box-sizing:border-box">Your name</div></div>
-      <div><div style="font-size:13px;font-weight:600;margin-bottom:8px">Email</div><div style="height:46px;border:1px solid #EBDDE1;border-radius:12px;background:#FBF8F9;display:flex;align-items:flex-start;padding:14px 16px;font-size:14px;color:#5A4E50;box-sizing:border-box">you@example.com</div></div>
-      <div><div style="font-size:13px;font-weight:600;margin-bottom:8px">Phone</div><div style="height:46px;border:1px solid #EBDDE1;border-radius:12px;background:#FBF8F9;display:flex;align-items:flex-start;padding:14px 16px;font-size:14px;color:#5A4E50;box-sizing:border-box">98XXXXXXXX</div></div>
-      <div><div style="font-size:13px;font-weight:600;margin-bottom:8px">Enquiry type</div><div style="height:46px;border:1px solid #EBDDE1;border-radius:12px;background:#FBF8F9;display:flex;align-items:flex-start;padding:14px 16px;font-size:14px;color:#5A4E50;box-sizing:border-box">General enquiry</div></div>
-      <div style="grid-column:span 2"><div style="font-size:13px;font-weight:600;margin-bottom:8px">Subject</div><div style="height:46px;border:1px solid #EBDDE1;border-radius:12px;background:#FBF8F9;display:flex;align-items:flex-start;padding:14px 16px;font-size:14px;color:#5A4E50;box-sizing:border-box">How can we help?</div></div>
-      <div style="grid-column:span 2"><div style="font-size:13px;font-weight:600;margin-bottom:8px">Message</div><div style="height:140px;border:1px solid #EBDDE1;border-radius:12px;background:#FBF8F9;display:flex;align-items:flex-start;padding:14px 16px;font-size:14px;color:#5A4E50;box-sizing:border-box">Write your message here</div></div>
-      <div style="grid-column:span 2;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center"><div style="font-size:12px;color:#5A4E50;border:1px solid #EBDDE1;border-radius:10px;padding:12px 18px">[Turnstile spam check]</div><a href="#" style="background:#BE3057;color:#fff;padding:15px 34px;border-radius:999px;font-weight:600;font-size:15px">Send message</a></div>
+      <form method="POST" action="/enquiry" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px">
+        @csrf
+        <div style="grid-column:span 2"><div class="form-label">Full name</div><input type="text" name="name" class="form-input" required></div>
+        <div style="grid-column:span 2"><div class="form-label">Email</div><input type="email" name="email" class="form-input" required></div>
+        <div><div class="form-label">Phone</div><input type="text" name="phone" class="form-input"></div>
+        <div><div class="form-label">Enquiry type</div><select name="enquiry_type" class="form-input"><option>General enquiry</option><option>Product information</option><option>Partnership</option><option>Career</option></select></div>
+        <div style="grid-column:span 2"><div class="form-label">Subject</div><input type="text" name="subject" class="form-input"></div>
+        <div style="grid-column:span 2"><div class="form-label">Message</div><textarea name="message" rows="5" class="form-input" style="height:140px;resize:vertical;padding:14px 16px"></textarea></div>
+        <div style="grid-column:span 2;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center"><button type="submit" class="btn-primary">Send message</button></div>
+      </form>
     </div>
   </div>
 

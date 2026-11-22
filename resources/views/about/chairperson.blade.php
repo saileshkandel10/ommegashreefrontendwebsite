@@ -35,7 +35,7 @@
       <p style="margin:0 0 24px;max-width:760px">स्वास्थ्य र राष्ट्रका लागि एक सङ्कल्प भन्ने मूल नाराका साथ स्थापित ओम मेगाश्री फर्मास्युटिकल्स सामूहिक लगानी भएको बृहत् योजनासहितको उद्योग हो । मेरो व्यावसायिक यात्राको प्रारम्भ नै औषधि व्यवसायबाट भयो । यसमा मसँगै अधिकांश प्रबन्धकको पनि लामो समयसम्मको औषधि व्यवसायका अनुभव जोडिएका छन् । पर्वत र म्याग्दीको भूमिबाट विस्तारित औषधि व्यवसायले जन्माएको ओम मेगाश्री फर्मास्युटिकल्स मेरो जीवनको स्वप्न योजना हो; जसलाई मैले डोका र डोलाबाट प्राप्त आशीर्वादका रूपमा लिएको छु ।</p>
       <p style="margin:0 0 24px;max-width:760px">मानव जीवनसँग प्रत्यक्ष सरोकार राख्ने औषधिमा आम समुदायको चासो र लगानी प्रवर्धनमा अग्रणी भूमिका निर्वाह गर्दै गुणस्तरीय औषधिमा जनताको प्रत्यक्ष पहुँच स्थापित गर्नु तथा निर्यातको ठोस कार्ययोजनासहित अगाडि बढ्नुलाई हामीले हाम्रो प्रमुख दायित्व ठानेका छौँ । हामी उक्त दायित्वलाई मूर्त रूप दिन मन, वचन र कर्मले समर्पित छौँ ।</p>
       <div style="margin-top:40px;padding-top:28px;border-top:1px solid #EAE5E8;display:flex;align-items:center;gap:20px;flex-wrap:wrap">
-        <div style="width:160px;height:56px;border:1.5px dashed #B72E5B;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#B72E5B;font-size:12px">[SIGNATURE]</div>
+        <div style="width:160px;height:56px;border:1.5px dashed #B72E5B;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#B72E5B;font-size:12px">Arjun Kumar Shrestha</div>
         <div style="font-family:Sora"><div style="font-weight:700;font-size:17px">Dr.(h.c) Arjun Kumar Shrestha</div><div style="font-size:14px;color:#B72E5B;font-weight:600">Chairman</div></div>
       </div>
     </div>

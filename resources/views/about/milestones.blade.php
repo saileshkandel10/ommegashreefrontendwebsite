@@ -28,7 +28,9 @@ $milestones=[
       @foreach ($milestones as $i => $m)
       <div style="display:flex;gap:28px;align-items:flex-start;position:relative;padding-left:24px">
         <div style="position:absolute;left:0;top:4px;width:16px;height:16px;border-radius:50%;background:#BE3057;border:3px solid #FBF8F9"></div>
+        @if($i < count($milestones)-1)
         <div style="position:absolute;left:0;top:22px;width:2px;height:calc(100% + 20px);background:#EBDDE1"></div>
+        @endif
         <div style="flex:none;width:120px"><div style="font-family:Sora;font-weight:700;font-size:22px;color:#BE3057">{{ $m['y'] }}</div></div>
         <div style="flex:1;background:#fff;border:1px solid #EBDDE1;border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:10px">
           <div style="font-family:Sora;font-weight:600;font-size:20px;color:#2E2627">{{ $m['t'] }}</div>
