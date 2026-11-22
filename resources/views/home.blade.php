@@ -150,19 +150,55 @@
   @media (max-width:768px){
     body > div:first-child{padding:8px 20px!important}
     header{padding:0 20px!important}
-    .hero-section{flex-direction:column!important;align-items:stretch!important;padding:40px 20px!important;gap:30px!important}
-    .hero-text,.hero-image{flex:1 1 100%!important;min-width:100%!important}
-    .hero-image{height:auto!important;max-height:300px!important}
-    .hero-image img{height:auto!important}
-    .hero-image > div{position:relative!important;left:auto!important;bottom:auto!important;width:100%!important;text-align:center;margin-top:12px!important}
     h1{font-size:32px!important;line-height:1.2!important}
-    [style*="padding:88px 80px"]{padding-left:20px!important;padding-right:20px!important}
-    [style*="margin:0 80px 88px"]{margin-left:0!important;margin-right:0!important}
-    [style*="padding:72px 80px"]{padding-left:20px!important;padding-right:20px!important}
-    [style*="padding:0 80px 72px"],[style*="padding:0 80px 88px"],[style*="padding:0 80px"]{padding-left:20px!important;padding-right:20px!important}
+    h2{font-size:26px!important;line-height:1.3!important}
+    /* hero slider */
+    [style*="height:720px"]{height:420px!important}
+    [style*="padding:0 140px 120px"]{padding:0 20px 60px!important}
+    [style*="padding:96px 120px"]{padding:20px!important}
+    #slider-track{width:500%!important}
+    .slide-dot{padding:0 12px!important}
+    .slide-dot > div:nth-child(2){font-size:13px!important}
+    #slide-prev,#slide-next{width:44px!important;height:44px!important;margin-top:-22px!important}
+    #slide-prev{left:12px!important}
+    #slide-next{right:12px!important}
+    /* padding/margin overrides */
+    [style*="padding:88px 80px"],[style*="padding:72px 80px"],[style*="padding:56px 80px"],[style*="padding:44px"],[style*="padding:36px"],[style*="padding:56px 80px 56px"],[style*="padding:40px 80px"],[style*="padding:0 80px 40px"],[style*="padding:0 80px 72px"],[style*="padding:0 80px 88px"],[style*="padding:0 80px"]{padding-left:20px!important;padding-right:20px!important}
+    [style*="margin:0 80px"],[style*="margin:56px 80px"],[style*="margin:0 80px 72px"],[style*="margin:0 80px 88px"],[style*="margin:56px 80px 24px"],[style*="margin:72px 80px 24px"],[style*="margin:0 80px 88px"]{margin-left:0!important;margin-right:0!important}
+    /* grid to single column */
     [style*="grid-template-columns:repeat(5,"],[style*="grid-template-columns:repeat(4,"],[style*="grid-template-columns:repeat(3,"],[style*="grid-template-columns:repeat(2,"]{grid-template-columns:1fr!important}
     [style*="grid-template-rows:repeat(2,230px)"]{grid-template-rows:repeat(4,200px)!important}
     [style*="grid-column:span 2;grid-row:span 2"]{grid-column:span 1!important;grid-row:span 1!important}
+    /* flex to column */
+    [style*="flex-direction:row"],[style*="flex-wrap:wrap"][style*="gap:48px"],[style*="flex-wrap:wrap"][style*="gap:64px"],[style*="flex-wrap:wrap"][style*="gap:40px"]{flex-direction:column!important;align-items:stretch!important}
+    /* image heights */
+    [style*="height:420px"],[style*="height:440px"],[style*="height:260px"],[style*="height:280px"],[style*="height:340px"],[style*="height:220px"],[style*="height:200px"],[style*="height:300px"],[style*="height:142px"]{height:auto!important;max-height:250px!important}
+    /* about section photos stack */
+    [style*="grid-template-columns:repeat(2,minmax(0,1fr))"][style*="gap:16px"]{grid-template-columns:1fr!important}
+    /* careers CTA stack */
+    [style*="margin:0 80px 88px"][style*="background:#BE3057"]{flex-direction:column!important;text-align:center!important;padding:40px 20px!important}
+    [style*="margin:0 80px 88px"][style*="background:#BE3057"] > div{text-align:center!important}
+    [style*="margin:0 80px 88px"][style*="background:#BE3057"] > a{align-self:center!important}
+    /* trust strip, departments, products, gallery, news, shareholders cards */
+    [style*="flex:1 1 240px"],[style*="flex:1 1 480px"],[style*="flex:1 1 440px"],[style*="flex:1 1 520px"],[style*="flex:1 1 380px"],[style*="flex:1 1 360px"],[style*="flex:1.4 1 520px"]{flex:1 1 100%!important}
+    /* hero bottom dots text size */
+    [style*="font-family:Sora;font-weight:700;font-size:32px;color:#BE3057"]{font-size:24px!important}
+  }
+  @media (max-width:480px){
+    h1{font-size:28px!important}
+    h2{font-size:22px!important}
+    header{height:auto;padding:12px 20px}
+    [style*="height:720px"]{height:340px!important}
+    [style*="padding:0 140px 120px"]{padding:0 16px 40px!important}
+    [style*="padding:88px 80px"],[style*="padding:72px 80px"],[style*="padding:56px 80px"],[style*="padding:44px"],[style*="padding:36px"],[style*="padding:56px 80px 56px"],[style*="padding:40px 80px"],[style*="padding:0 80px 40px"],[style*="padding:0 80px 72px"],[style*="padding:0 80px 88px"],[style*="padding:0 80px"]{padding-left:16px!important;padding-right:16px!important}
+    [style*="margin:0 80px"],[style*="margin:56px 80px"],[style*="margin:0 80px 72px"],[style*="margin:0 80px 88px"],[style*="margin:56px 80px 24px"],[style*="margin:72px 80px 24px"],[style*="margin:0 80px 88px"]{margin-left:0!important;margin-right:0!important}
+    [style*="grid-template-columns:repeat(5,"],[style*="grid-template-columns:repeat(4,"],[style*="grid-template-columns:repeat(3,"],[style*="grid-template-columns:repeat(2,"]{grid-template-columns:1fr!important}
+    [style*="grid-template-rows:repeat(2,230px)"]{grid-template-rows:repeat(4,200px)!important}
+    [style*="grid-column:span 2;grid-row:span 2"]{grid-column:span 1!important;grid-row:span 1!important}
+    [style*="flex-direction:row"],[style*="flex-wrap:wrap"][style*="gap:48px"],[style*="flex-wrap:wrap"][style*="gap:64px"],[style*="flex-wrap:wrap"][style*="gap:40px"]{flex-direction:column!important;align-items:stretch!important}
+    [style*="height:420px"],[style*="height:440px"],[style*="height:260px"],[style*="height:280px"],[style*="height:340px"],[style*="height:220px"],[style*="height:200px"],[style*="height:300px"],[style*="height:142px"]{height:auto!important;max-height:200px!important}
+    [style*="grid-template-columns:repeat(2,minmax(0,1fr))"][style*="gap:16px"]{grid-template-columns:1fr!important}
+    [style*="margin:0 80px 88px"][style*="background:#BE3057"]{padding:32px 16px!important}
   }
 </style>
 <script>
