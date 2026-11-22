@@ -3,19 +3,6 @@
 @section('content')
 <div style="width:100%;max-width:1440px;margin:0 auto;background:#FBF8F9">
 
-<!-- utility bar -->
-<div style="background:#2B6684;color:#fff;font-size:13px;padding:10px 80px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center">
-<div style="display:flex;gap:28px;flex-wrap:wrap"><a href="tel:+977015244310" style="color:#fff">01-5244310</a><a href="mailto:info@ommegashree.com" style="color:#fff">info@ommegashree.com</a></div>
-<div style="display:flex;gap:24px;align-items:center"><a href="#" style="color:#fff">SFA Login</a><a href="#" style="color:#fff">EN / नेपाली</a></div>
-</div>
-
-<!-- nav -->
-<div style="background:#fff;padding:0 80px;height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;border-bottom:1px solid #EBDDE1">
-<a href="/" style="display:flex;align-items:center"><img src="/images/logo.png" alt="Om Megashree Pharmaceuticals - your health, our concern" style="height:60px;width:auto;display:block"></a>
-<div style="display:flex;gap:28px;font-size:15px;font-weight:500;flex-wrap:wrap"><a href="/" style="color:#2E2627">Home</a><a href="/about" style="color:#2E2627">About</a><a href="/departments" style="color:#2E2627">Departments</a><a href="/products" style="color:#2E2627">Products</a><a href="/career" style="color:#2E2627">Career</a><a href="/disclosure" style="color:#2E2627">Disclosure</a><a href="/contact" style="color:#2E2627">Contact</a></div>
-<div style="display:flex;gap:12px;align-items:center"><a href="#" aria-label="Search" style="width:44px;height:44px;border:1px solid #EBDDE1;border-radius:50%;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E2627" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-5-5"></path></svg></a><a href="/contact" style="background:#BE3057;color:#fff;padding:13px 24px;border-radius:999px;font-weight:600;font-size:14px">Get in Touch</a></div>
-</div>
-
 <!-- hero slider -->
 <div style="position:relative;width:100%;height:720px;background:#2B6684;overflow:hidden;color:#fff">
 <div style="position:absolute;inset:0;display:flex;align-items:flex-start;justify-content:flex-end;padding:96px 120px;box-sizing:border-box;font-size:13px;color:#fff;opacity:.55;text-align:right">[[HERO PHOTO 1600 x 1000: Chitwan factory / production line]]</div>
