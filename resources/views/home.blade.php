@@ -3,15 +3,15 @@
 @section('content')
 <div style="width:100%;max-width:1440px;margin:0 auto;background:#FAF8F9">
 <!-- hero -->
-<div style="display:flex;flex-wrap:wrap;gap:48px;padding:88px 80px;background:linear-gradient(180deg,#F8E9EF,#FFFFFF);align-items:center">
-  <div style="flex:1 1 520px;min-width:0">
+<div class="hero-section" style="display:flex;flex-wrap:wrap;gap:48px;padding:88px 80px;background:linear-gradient(180deg,#F8E9EF,#FFFFFF);align-items:center">
+  <div class="hero-text" style="flex:1 1 520px;min-width:0">
     <div style="display:inline-block;background:#fff;border:1px solid #EAE5E8;border-radius:999px;padding:8px 16px;font-size:13px;font-weight:600;color:#B72E5B">Nepal's 1st IPO-listed pharmaceuticals company</div>
     <h1 style="font-family:Sora;font-size:60px;line-height:1.08;margin:24px 0 16px;color:#252329;letter-spacing:-1px">Quality medicine, made in Nepal for Nepal.</h1>
     <div style="font-family:'Noto Sans Devanagari';font-size:22px;color:#B72E5B;margin-bottom:20px">स्वास्थ्य र राष्ट्रका लागि एक सङ्कल्प</div>
     <p style="font-size:18px;line-height:1.6;color:#77717A;margin:0 0 36px;max-width:560px">Innovative healthcare solutions, from cardiac and anti-diabetic care to everyday medicines, manufactured to international quality standards.</p>
     <div style="display:flex;gap:14px;flex-wrap:wrap"><a href="/products" style="background:#B72E5B;color:#fff;padding:16px 30px;border-radius:999px;font-weight:600">Explore Products</a><a href="#" style="border:1.5px solid #B72E5B;color:#B72E5B;padding:16px 30px;border-radius:999px;font-weight:600">Watch Our Story</a></div>
   </div>
-  <div style="flex:1 1 440px;min-width:0;position:relative">
+  <div class="hero-image" style="flex:1 1 440px;min-width:0;position:relative">
     <img src="/images/professional/hero-pharma.jpg" alt="Om Megashree Pharmaceuticals hero" style="width:100%;height:100%;object-fit:cover;border-radius:28px">
     <div style="position:absolute;left:-28px;bottom:36px;background:#fff;border-radius:18px;padding:18px 22px;box-shadow:0 14px 34px rgba(8,48,46,.18)"><div style="font-family:Sora;font-weight:700;font-size:30px;color:#B72E5B">70+</div><div style="font-size:13px;color:#77717A">Product licenses</div></div>
   </div>
@@ -90,5 +90,20 @@
   <div><h2 style="font-family:Sora;font-size:34px;margin:0 0 10px">Build the future of Nepali medicine with us.</h2><div style="color:#fff;font-size:16px">A dedicated team of 100+, and growing.</div></div>
   <a href="/career" style="background:#fff;color:#2E2627;padding:16px 30px;border-radius:999px;font-weight:600">View open roles</a>
 </div>
+
+<style>
+  @media (max-width:768px){
+    .hero-section{flex-direction:column!important;align-items:stretch!important;padding:40px 20px!important;gap:30px!important}
+    .hero-text,.hero-image{flex:1 1 100%!important;min-width:100%!important}
+    .hero-image{height:auto!important;max-height:300px!important}
+    .hero-image img{height:auto!important}
+    .hero-image > div{position:relative!important;left:auto!important;bottom:auto!important;width:100%!important;text-align:center;margin-top:12px!important}
+    h1{font-size:32px!important;line-height:1.2!important}
+    [style*="padding:88px 80px"]{padding-left:20px!important;padding-right:20px!important}
+    [style*="margin:0 80px 88px"]{margin-left:0!important;margin-right:0!important}
+    [style*="padding:72px 80px"]{padding-left:20px!important;padding-right:20px!important}
+  }
+</style>
+
 </div>
 @endsection
