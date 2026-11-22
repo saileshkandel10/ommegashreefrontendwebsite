@@ -48,12 +48,19 @@
     .two-col,.three-col{flex-direction:column!important}
     .card-stack{margin-bottom:24px}
     .brand-text{font-size:16px!important}
+    [style*="padding:56px 80px"],[style*="padding:56px 80px 48px"],[style*="padding:0 80px"],[style*="padding:72px 80px"],[style*="padding:88px 80px"],[style*="margin:0 80px"]{padding-left:20px!important;padding-right:20px!important;margin-left:0!important;margin-right:0!important}
+    [style*="padding:56px 80px 72px"]{padding-left:20px!important;padding-right:20px!important}
+    [style*="margin:56px 80px"],[style*="margin:0 80px 72px"],[style*="margin:0 80px 88px"]{margin-left:0!important;margin-right:0!important}
+    [style*="height:420px"],[style*="height:440px"],[style*="height:260px"],[style*="height:280px"],[style*="height:340px"]{height:auto!important;max-height:250px!important}
+    [style*="grid-template-columns:repeat(3,"],[style*="grid-template-columns:repeat(4,"]{grid-template-columns:1fr!important}
+    [style*="flex-direction:row"]{flex-direction:column!important}
   }
   @media (max-width:480px){
     h1{font-size:30px!important}
     h2{font-size:24px!important}
     header{height:auto;padding:12px 20px}
     .menu-toggle{margin-left:auto}
+    [style*="padding:56px 80px"],[style*="padding:0 80px"],[style*="padding:72px 80px"],[style*="padding:88px 80px"],[style*="margin:0 80px"]{padding-left:16px!important;padding-right:16px!important;margin-left:0!important;margin-right:0!important}
   }
 </style>
 </head>
